@@ -1,3 +1,23 @@
+# Handling input for user and If-statements
+
+<details>
+<summary>Table of contents</summary>
+
+- [Simple handling of input from user](#simple-handling-of-input-from-user)
+
+  - [Alert](#alert)
+  - [Prompt](#prompt)
+  - [Confirm](#confirm)
+  - [Good to know](#good-to-know-about-these-methods)
+
+- [If statements](#if-statements)
+  - [Comparison Operators](#comparison-operators)
+  - [Else](#else)
+  - [Else-if](#else-if)
+  - [Logical Operators](#logical-operators)
+  - [Truthy & Falsey](#truthy-and-falsey-values)
+  </details>
+
 ## Simple handling of input from user
 
 ### Alert
@@ -9,6 +29,8 @@ alert("This is an alert message! Dismiss me before the program continues.");
 
 console.log("Alert is dismissed");
 ```
+
+[Back to top](#handling-input-for-user-and-if-statements)
 
 ### Prompt
 
@@ -39,6 +61,8 @@ The prompt always returns a value to us, either a string if we actually types so
 
 FYI, everything you type as a response in a prompt will be converted to a string before it's returned.
 
+[Back to top](#handling-input-for-user-and-if-statements)
+
 ### Confirm
 
 A confirm dialog is used to ask the user for confirmatin. Usually a question or something that can be answered with yes and no. The confirm uses the options `Ok` and `Cancel` in order represent these answers. It returns a boolean, `true` if the user press `Ok` or `false` if the user press `Cancel`. Like the other methods it pauses the script until it's completed.
@@ -50,6 +74,8 @@ const isOver20 = confirm("Are you over the age of 20?");
 // Alert the answer.
 alert(`Were you older then 20? ${isOver20}`);
 ```
+
+[Back to top](#handling-input-for-user-and-if-statements)
 
 ### Good to know about these methods.
 
@@ -68,7 +94,9 @@ window.promt("...some prompt");
 window.confirm("...some confirmation text");
 ```
 
-## If-else-statements
+[Back to top](#handling-input-for-user-and-if-statements)
+
+## If-statements
 
 A statment is a lone of code that performs a certain action or task. It's like giving a command to a computer to do something specific.
 
@@ -95,6 +123,8 @@ console.log(greeting);
 ```
 
 Lastly we instruct the computer to display this greeting in the console of the browser. When you run this code, you'll see `Hello there!` in the console. This is a proper statement!
+
+[Back to top](#handling-input-for-user-and-if-statements)
 
 ### Back to if-statements
 
@@ -191,6 +221,8 @@ if (ageAsNumber >= ageRestriction) {
 
 If-statements works by checking a certain condition if it should run the code inside the codeblock or not. Remember that it **ONLY** runs the code if the condition is true. Otherwise the code block will be completely ignored.
 
+[Back to top](#handling-input-for-user-and-if-statements)
+
 ### Else
 
 Else is nothing that can be used on its own, it must alwaus be used in conjunction with an if-statment. But it gives you the opportunity to something else the first condition is false.
@@ -225,6 +257,8 @@ if (ageAsNumber >= ageRestriction) {
   alert("I am sorry, you shall not pass!");
 }
 ```
+
+[Back to top](#handling-input-for-user-and-if-statements)
 
 ### Else-if
 
@@ -267,6 +301,8 @@ if (age >= 80) {
 ```
 
 This is a good example if we want to check multiple conditions one by one, but what if we want to check serveral conditions at the same time? Then we have logical operators.
+
+[Back to top](#handling-input-for-user-and-if-statements)
 
 ### Logical Operators
 
@@ -392,6 +428,8 @@ if (!somethingFalse) {
 }
 ```
 
+[Back to top](#handling-input-for-user-and-if-statements)
+
 ### Truthy and Falsey values
 
 A value is considered `truthy` if it coerces to `true` when evaluated in a boolean context, like an if check for instance.
@@ -448,3 +486,5 @@ if (user) {
   // Is falsy since we haven't assigned a value to the user variable.
 }
 ```
+
+[Back to top](#handling-input-for-user-and-if-statements)
